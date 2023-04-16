@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.isi {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.konten {
+    width: 350px;
+    border-radius: 25px;
+
+    padding: 40px;
+
+    background-color: rgba(207, 207, 207, 0.196);
+}
