@@ -35,11 +35,19 @@
         function removePass() {
             const pass = document.getElementById("pass");
             const listacc = document.getElementById("list");
-            const result = document.getElementById("result");
+            const listresult = document.getElementById("result");
 
-            result.value = listacc.value.replaceAll(pass.value, "");
+            var result = ""
+            result = listacc.value.replace(/(\r\n|\n|\r)/gm, "");
+            result = "\"" + result.replaceAll(pass.value, "\", \"");
+            result = result.slice(0, result.length - 4)
+
+
+            listresult.value = result
+            
         }
     </script>
 </body>
 
 </html>
+
