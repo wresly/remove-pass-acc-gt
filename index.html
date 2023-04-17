@@ -39,8 +39,9 @@
 
             var result = ""
             result = listacc.value.replace(/(\r\n|\n|\r)/gm, "");
+            result = result.trimEnd()
             result = "\"" + result.replaceAll(pass.value, "\", \"");
-            result = result.slice(0, result.length - 4)
+            result = result.slice(0, result.length - 3)
 
 
             listresult.value = result
